@@ -19,11 +19,13 @@ public class Correntista {
 	
 	@Column(length = 20)
 	private String cpg;
+	
 	@Column(length = 60)
 	private String nome;
 	
 	@Embedded
     private Conta conta;
+	
     public Conta getConta() {
 		return conta;
 	}
